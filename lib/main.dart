@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './textDemo.dart';
+import './containerDemo.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,6 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       home: Home(),
+      theme: ThemeData(
+        fontFamily: 'ZCOOL_QingKe_HuangYou',
+      ),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -25,29 +30,6 @@ class Home extends StatelessWidget {
           title: Text('Flutter Demo'),
           actions: [Icon(Icons.settings)],
         ),
-        body: TextDemo());
-  }
-}
-
-class TextDemo extends StatelessWidget {
-  const TextDemo({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text('Hello World',
-            textDirection: TextDirection.ltr,
-            style: TextStyle(
-              color: Colors.blue,
-              fontSize: 24,
-              fontWeight: FontWeight.w900,
-              fontStyle: FontStyle.italic,
-            ),
-            textAlign: TextAlign.right,
-            overflow: TextOverflow.ellipsis,
-            maxLines: 3),
-      ],
-    );
+        body: ContainerDemo());
   }
 }
