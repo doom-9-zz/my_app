@@ -40,7 +40,13 @@ class TextDemo extends StatelessWidget {
             textDirection: TextDirection.ltr,
             style: TextStyle(
               color: Colors.blue,
-            )),
+              fontSize: 24,
+              fontWeight: FontWeight.w900,
+              fontStyle: FontStyle.italic,
+            ),
+            textAlign: TextAlign.right,
+            overflow: TextOverflow.ellipsis,
+            maxLines: 3),
       ],
     );
   }
