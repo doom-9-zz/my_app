@@ -5,6 +5,7 @@ import './columnDemo.dart';
 import './wrapDemo.dart';
 import './stackDemo.dart';
 import './cardDemo.dart';
+import './buttonDemo.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,6 +35,6 @@ class Home extends StatelessWidget {
           title: Text('Flutter Demo'),
           actions: [Icon(Icons.settings)],
         ),
-        body: CardDemo());
+        body: ButtonDemo());
   }
 }
