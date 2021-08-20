@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import './textDemo.dart';
 import './containerDemo.dart';
+import './columnDemo.dart';
+import './wrapDemo.dart';
+import './stackDemo.dart';
+import './cardDemo.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,6 +34,6 @@ class Home extends StatelessWidget {
           title: Text('Flutter Demo'),
           actions: [Icon(Icons.settings)],
         ),
-        body: ContainerDemo());
+        body: CardDemo());
   }
 }

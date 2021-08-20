@@ -14,6 +14,13 @@ class ContainerDemo extends StatelessWidget {
         height: 200,
         padding: EdgeInsets.all(20),
         margin: EdgeInsets.fromLTRB(20, 10, 30, 50),
-        decoration: BoxDecoration(border: Border.all()));
+        alignment: Alignment.center,
+        transform: Matrix4.rotationZ(0.2),
+        decoration: BoxDecoration(
+            border: Border.all(),
+            // color: Colors.red,
+            gradient: LinearGradient(
+              colors: [Colors.red, Colors.orange, Colors.yellow],
+            )));
   }
 }
